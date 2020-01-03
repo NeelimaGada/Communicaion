@@ -1,0 +1,65 @@
+
+    
+
+<div class="container">
+<div class="row">
+<div class="col-md-6 offset-md-3">
+<h3>Angular 7 Reactive Form Validation</h3>
+<form [formGroup]="registerForm"(ngSubmit)="onSubmit(registerForm.value)">
+<div class="form-group">
+<label>First Name</label>
+<input type="text"formControlName="firstname"class="form-control" required>
+<!-- <div *ngIf="submitted && f.firstname.errors"class="invalid-feedback">
+<div *ngIf="f.firstname.errors.required">First Name is required</div> -->
+<!-- </div> -->
+</div>
+<div class="form-group">
+<label>Last Name</label>
+<input type="text"formControlName="lastname"class="form-control"required/>
+<!-- <div *ngIf="submitted && f.lastname.errors"class="invalid-feedback">
+<div *ngIf="f.lastname.errors.required">Last Name is required</div>
+</div> -->
+</div>
+
+
+    
+  <div class="form-group">
+                                <label>Username</label>
+                                <input type="text" formControlName="username" class="form-control" required />
+                                <!-- <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">UserName is required</div>
+
+                                </div> -->
+                            </div>
+                            <div class="form-group">
+                                    <label>Mobile No</label>
+                                    <input type="text" formControlName="mobileno" class="form-control" required />
+                                    <!-- <div *ngIf="submitted && f.mobileno.errors" class="invalid-feedback">
+                                        <div *ngIf="f.mobileno.errors.required">Mobile Number is required</div>
+                                   </div> -->
+                                </div>
+                        <div class="form-group">
+                            <label>Gender</label><br>
+                            <input type="radio" formControlName="gender" name="gender" value="male" [ngClass]="{' is-invalid':submitted && f.gender.errors}">Male<br>
+                            <input type="radio" formControlName="gender" name="gender" value="female"  [ngClass]="{' is-invalid':submitted && f.gender.errors}">Female
+                             </div>
+                      <div class="form-group">
+                            <label>Courses</label>
+                            <select class="custom-select"  formControlName="courses" >
+                                <option value="">Choose your city</option>
+                               <option value="Java">Java</option>
+                               <option value="Angular">Angular</option>
+                               <option value="Testing">Testing</option>
+                               <option value=".Net">.Net</option>
+                              </select>
+                            </div>
+                <div class="form-group">
+                            <button class="btn btn-success">Register</button>
+                            <button class="btn btn-primary ml-3" (click)="update()">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+ 
+
+

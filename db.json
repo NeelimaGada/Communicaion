@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "firstname": "sdfds",
+      "lastname": "dgfd",
+      "gender": "male",
+      "username": "gfdgdfg",
+      "mobileno": "fdgfdgfd",
+      "courses": "Java",
+      "id": 1
+    },
+    {
+      "firstname": "fdg",
+      "lastname": "fdgfd",
+      "gender": "male",
+      "username": "gfdg",
+      "mobileno": "8121881264",
+      "courses": "Java",
+      "id": 2
+    }
+  ]
+}
